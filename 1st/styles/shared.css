@@ -1,0 +1,32 @@
+body{
+    font-family: "Gowun Batang", snas-serif;
+    text-align: center;
+    background-color: rgb(207, 214, 233);
+    margin: 50px
+}
+
+h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: rgb(73, 99, 127);
+}
+
+h2{
+    font-weight: 700;
+    color: rgb(49, 60, 139);
+}
+
+p{
+    font-weight: 400;
+    color: rgb(49, 60, 139);
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(87, 104, 228);
+}
+
+a:hover{
+    text-decoration: underline;
+}

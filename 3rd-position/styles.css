@@ -1,0 +1,38 @@
+div {
+  background-color: #c7c7c7;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  color: black;
+  padding: 50px;
+  margin: 0;
+}
+
+#container {
+  background-color: #521751;
+  position: relative;                /*#three의 부모요소 중 처음으로 나오는 relative. -> #three는 해당 container에 대해 absolute함함*/
+}
+
+#container p {
+  color: white;
+}
+
+#one {
+  background-color: #943092;
+  position: fixed;                 /*스크롤해도 고정* (viewport에 대해 상대적)*/
+}
+
+#two {
+  background-color: #c95bc7;
+  position: relative;
+  top: 20px;                         /*현재위치로부터 얼마나 떨어지는지*/
+  bottom: 20px;
+}
+
+#three {
+  background-color: #dd61db;
+  position: absolute;                /*relative한 선조 요소에 대해 문서 흐름을 무시하고 위치함.*/
+  top: 0;
+}

@@ -1,0 +1,67 @@
+html{
+    font-family: Roboto;
+    background-color: #c4deff;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: 52px;
+    font-weight: 800;
+    color: rgb(34, 72, 129);
+}
+
+img{
+    width: 300px;
+    margin: 10px auto 60px auto;
+}
+
+main{
+    width: 700px;
+    margin: 0px auto 10px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(69, 101, 148);
+    color: white;
+}
+
+.span-bold{
+    font-weight: 800;
+}
+
+li{
+    list-style: none;
+    padding-left: 16px;
+    margin-top: 10px;
+}
+
+.highlight{
+    border-left: 4px solid rgb(152, 171, 255);
+    text-indent: -4px;
+}
+
+mark{
+    background-color: rgb(212, 228, 255);
+    border-radius: 3px;
+    padding: 2px 4px;
+    color:rgb(3, 26, 59);
+}
+
+footer{
+    text-align: center;
+    margin:20px auto;
+}
+
+a{
+    background-color: rgb(113, 145, 215);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#gray{
+    color: gray;
+}
