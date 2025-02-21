@@ -1,0 +1,90 @@
+body{
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    width: 30rem;
+    margin: 1rem auto;
+    background-color: aliceblue;
+    padding: 1rem 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+section{
+    margin-bottom: 1rem;
+}
+
+h1{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    font-weight: bold;
+}
+
+input, textarea, select{
+    font: inherit;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 2rem;
+    margin: 0.5rem 0;
+}
+
+textarea{
+    height: 6rem;
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    background-color: rgb(206, 212, 255);
+}
+
+.inline-control input, .inline-control label{
+    display: inline;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: right;
+}
+
+.buttons button{
+    margin-left: 0.5rem;
+    padding: 0.3rem 1rem;
+    font: inherit;
+    border-style: solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#clear-button{
+    background-color: white;
+    border-color: cornflowerblue;
+}
+
+#clear-button:hover{
+    background-color: black;
+    color: white;
+}
+
+#submit-button{
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    color: white;
+}
+
+#submit-button:hover{
+    background-color:black;
+}
