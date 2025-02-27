@@ -24,11 +24,20 @@ alert(job.title);         /* Output: Developer */
 let adultYears;
 
 adultYears = age - 18;
-alert(adultYears);
+console.log(adultYears);
 
 function calculateAdultYears(userAge) {
     return userAge - 18;
 }
 
 let totalAdultYears = calculateAdultYears(100);
-alert(totalAdultYears);
+console.log(totalAdultYears);
+
+let person = {
+    name: 'Brown',            // Property
+    greet(){                  // Method
+        console.log('Hello!');
+    }
+};
+
+person.greet();
