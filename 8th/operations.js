@@ -26,3 +26,6 @@ console.log('abc' - 'ab');        // Output: NaN
 
 let userName = 'asdf';
 console.log(userName.length);     // length: 기본 내장 method
+
+let hobbies = ['sports', 'cooking'];
+console.log(hobbies.length);      // array 내 element 개수 출력
