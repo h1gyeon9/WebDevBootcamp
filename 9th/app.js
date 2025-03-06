@@ -22,3 +22,24 @@ let firstParagraph = document.querySelector('p');
 
 // 3. new element를 parent element content에 삽입
 firstParagraph.append(newAnchorElement);
+
+
+// element 삭제
+
+// 1. 삭제할 것 선택
+let firstH1Element = document.querySelector('h1');
+
+// 2. 삭제
+//firstH1Element.remove();  // 옛날 브라우저 (익스플로러) 등에선 작동 X
+firstH1Element.parentElement.removeChild(firstH1Element); // 다 작동
+
+
+// element 이동
+firstParagraph.parentElement.append(firstParagraph);
+
+
+//innerHTML
+console.log(firstParagraph.innerHTML);
+
+firstParagraph.innerHTML = 'Hi! This is <strong>important!</strong>.';
+//innerHTML -> html 요소 접근 가능, textContent -> html 요소를 넣어도 일반 텍스트로 이해함
