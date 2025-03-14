@@ -17,6 +17,7 @@ divElement.append(lengthOutput);*/
 
 let inputElement = document.body.querySelector('input');
 let maxAllowedChars = inputElement.maxLength;
+let remainingCharsElement = document.body.querySelector('#remaining-chars');
 
 inputElement.addEventListener('input', calculateRemainingChars);
 
@@ -26,9 +27,22 @@ function calculateRemainingChars(){
 
     let remainingChars = maxAllowedChars - textLength;
 
-    document.body.querySelector('#remaining-chars').textContent = remainingChars;
+    remainingCharsElement.textContent = remainingChars;
 
-    if (remainingChars<=10) {
-        document.querySelector('form').className = 'warning';
+    if (remainingChars === 0) {
+        remainingCharsElement.classList.add('error');
+        inputElement.classList.add('error');
+    }
+
+    else if (remainingChars <= 10) {
+        remainingCharsElement.classList.add('warning');
+        inputElement.classList.add('warning');
+        remainingCharsElement.classList.remove('error');
+        inputElement.classList.remove('error');
+    }
+
+    else{
+        remainingCharsElement.classList.remove('warning');
+        inputElement.classList.remove('warning');
     }
 }
