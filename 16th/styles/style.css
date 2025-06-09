@@ -1,7 +1,9 @@
 html{
     --color-brown-100: rgb(52, 39, 43);
     --color-brown-150: rgb(40, 31, 36);
+    --color-brown-200: rgb(118, 63, 72);
     --color-brown-300: rgb(215, 194, 194);
+    --color-brown-500: rgb(237, 224, 224);
 }
 
 body{
